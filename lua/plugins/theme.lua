@@ -2,10 +2,10 @@ return {
 	"rose-pine/neovim",
 	name = "rose-pine",
 	config = function()
-		vim.cmd("colorscheme rose-pine-moon")
+		vim.cmd("colorscheme rose-pine-main")
 	end,
 	opts = {
-		variant = "auto", -- auto, main, moon, or dawn
+		variant = "main", -- auto, main, moon, or dawn
 		dark_variant = "main", -- main, moon, or dawn
 		dim_inactive_windows = false,
 		extend_background_behind_borders = true,
@@ -17,9 +17,9 @@ return {
 		},
 
 		styles = {
-			bold = true,
-			italic = true,
-			transparency = true,
+			bold = false,
+			italic = false,
+			transparency = false,
 		},
 
 		groups = {

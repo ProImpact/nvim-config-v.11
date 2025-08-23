@@ -1,14 +1,13 @@
 return {
 	"mfussenegger/nvim-lint",
-	dependencies = { "williamboman/mason.nvim" },
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			lua = { "selene" },
-			sh = { "shellcheck" },
-			python = { "flake8" },
+			--			lua = { "selene" },
+			-- sh = { "shellcheck" },
+			-- python = { "flake8" },
 		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost", "BufEnter", "InsertLeave" }, {
