@@ -1,5 +1,14 @@
 vim.lsp.enable({
 	"gopls",
+	"lua_ls",
+	"clangd",
+	"dockerls",
+	"ts_ls",
+	"docker_compose_language_service",
+	"pyright",
+	"bashls",
+	"sqls",
+	"biome",
 })
 
 vim.diagnostic.config({
@@ -13,10 +22,10 @@ vim.diagnostic.config({
 	},
 	sings = {
 		text = {
-			[vim.diagnostic.severity.ERROR] = "",
-			[vim.diagnostic.severity.WARN] = "",
-			[vim.diagnostic.severity.INFO] = "",
-			[vim.diagnostic.severity.HINT] = "",
+			[vim.diagnostic.severity.ERROR] = "",
+			[vim.diagnostic.severity.WARN] = "",
+			[vim.diagnostic.severity.INFO] = "",
+			[vim.diagnostic.severity.HINT] = "󰌶",
 		},
 		numhl = {
 			[vim.diagnostic.severity.ERROR] = "ErrorMsg",
